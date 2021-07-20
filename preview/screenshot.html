@@ -11,7 +11,6 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
   <link rel="stylesheet" href="../assets/css/fontawesome/all.min.css">
-  <link rel="stylesheet" href="../assets/css/highlight/tomorrow-night-bright.css">
   <!-- Custom styles for this template -->
   <link href="../assets/css/style.css" rel="stylesheet">
   <style>
@@ -43,22 +42,38 @@
           <li><a href=""><i class="fas fa-camera me-1"></i> Screenshot</a></li>
         </ul>
       </div>
-      <div class="donate">
+      <div class="license comming-soon">
         <p class="text-muted ms-3 mt-4">License</p>
         <ul>
-          <li><a href="#"><i class="fas fa-file-alt me-1"></i> GNU General Public License
-              v3.0</a></li>
+          <li>
+            <a href="#">
+              <i class="fas fa-file-alt me-1"></i>
+              GNU General Public License v3.0
+            </a>
+          </li>
         </ul>
       </div>
       <div class="donate">
         <p class="text-muted ms-3 mt-4">Support Author</p>
         <ul>
-          <a href="#" style="color: #FC3367">
+          <li class="ms-3 mt-4">
+            <a href="#" class="btn btn-light comming-soon" style="color: #FC3367">Donate
+              <i class="fab fa-gratipay"></i>
+            </a>
+          </li>
+          <!-- <li>
+            <button class="btn btn-light btn-sm rounded">
+              <a href="" style="color: #FC3367">Donate
+                <i class="fab fa-gratipay"></i>
+              </a>
+            </button>
+          </li> -->
+          <!-- <a href="#" style="color: #FC3367">
             <li class="bg-white rounded text-center me-4">
               Donate
               <i class="fab fa-gratipay"></i>
           </a>
-          </li>
+          </li> -->
         </ul>
       </div>
     </div>
@@ -67,9 +82,12 @@
     <div id="page-content-wrapper">
       <nav class="navbar navbar-expand-lg navbar-light bg-dark-side mt-4">
         <div class="container-fluid">
-          <button class="btn btn-dark" id="menu-toggle"><i class="fas fa-bars"></i></button>
+          <button class="btn btn-dark" id="menu-toggle"><i class="fas fa-bars me-2"></i>Menu</button>
+          <a href="https://github.com/xshin404/myTermux" class="btn btn-light me-3">
+            <i class="fab fa-github me-2"></i>See on GitHub
+          </a>
           <!-- GitHub corner -->
-          <a href="https://github.com/xshin404/myTermux" class="github-corner" tabindex="-1"><svg width="80" height="80"
+          <!-- <a href="https://github.com/xshin404/myTermux" class="github-corner" tabindex="-1"><svg width="80" height="80"
               viewBox="0 0 250 250"
               style=" position: absolute; bottom: 0; right: 0; border: 0; fill: #fff; color: #1A1C1E;">
               <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
@@ -112,34 +130,132 @@
                 animation: octocat-wave 560ms ease-in-out;
               }
             }
-          </style>
+          </style> -->
           <!-- <a href="https://github.com/xshin404/myTermux" class="btn btn-light me-3"><i
               class="fab fa-github me-2"></i>See on GitHub</a> -->
         </div>
       </nav>
       <div class="container-fluid bg-dark-side text-light p-4">
         <h1>myTermux Preview</h1>
+        <div class="text-end">
+          <a href="https://github.com/annzc/shot-magick" class="btn btn-light mb-4" target="_blank" rel="noopener"><i
+              class="fas fa-camera me-2"></i>Shoot by Annzc</a>
+        </div>
         <div class="card mb-3 bg-dark" style="max-width: 540px;">
           <div class="row g-0">
             <div class="col-md-4">
-              <img src="images/music.png" class="img-fluid rounded-start" alt="...">
+              <a href="images/colorscheme/owl4ce-dark.png" target="_blank" rel="noopener">
+                <img src="images/colorscheme/owl4ce-dark.png" class="img-fluid rounded-start" alt="Owl4ce - Dark">
+              </a>
             </div>
             <div class="col-md-8">
               <div class="card-body">
-                <h5 class="card-title"><i class="fas fa-music me-2"></i> Music</h5>
+                <h5 class="card-title"><i class="fas fa-palette me-2"></i> Colorscheme</h5>
                 <ul style="list-style-type: disc;">
                   <li>
-                    <p class="card-text">Ncmpcpp (Music Player)</p>
+                    <a href="images/colorscheme/ayu-dark.png" class="card-text" target="_blank" rel="noopener">
+                      Ayu - Dark
+                    </a>
                   </li>
                   <li>
-                    <p class="card-text">Cava (Visualizer Pulseaudio)</p>
+                    <a href="images/colorscheme/ayu-mirage.png" class="card-text" target="_blank" rel="noopener">
+                      Ayu - Mirage
+                    </a>
                   </li>
                   <li>
-                    <p class="card-text">Tmux (Spliter)</p>
+                    <a href="images/colorscheme/ayu-light.png" class="card-text" target="_blank" rel="noopener">
+                      Ayu - Light
+                    </a>
+                  </li>
+                  <li>
+                    <a href="images/colorscheme/dracula.png" class="card-text" target="_blank" rel="noopener">
+                      Dracula
+                    </a>
+                  </li>
+                  <li>
+                    <a href="images/colorscheme/elementary.png" class="card-text" target="_blank" rel="noopener">
+                      Elementary
+                    </a>
+                  </li>
+                  <li>
+                    <a href="images/colorscheme/gruvbox-dark.png" class="card-text" target="_blank" rel="noopener">
+                      Gruvbox - Dark
+                    </a>
+                  </li>
+                  <li>
+                    <a href="images/colorscheme/material.png" class="card-text" target="_blank" rel="noopener">
+                      Material
+                    </a>
+                  </li>
+                  <li>
+                    <a href="images/colorscheme/material-ocean.png" class="card-text" target="_blank" rel="noopener">
+                      Material - Ocean
+                    </a>
+                  </li>
+                  <li>
+                    <a href="images/colorscheme/monokai-dark.png" class="card-text" target="_blank" rel="noopener">
+                      Monokai - Dark
+                    </a>
+                  </li>
+                  <li>
+                    <a href="images/colorscheme/nekonako-djancoeg.png" class="card-text" target="_blank" rel="noopener">
+                      Nekonako - Djancoeg
+                    </a>
+                  </li>
+                  <li>
+                    <a href="images/colorscheme/nekonako-hue.png" class="card-text" target="_blank" rel="noopener">
+                      Nekonako - Hue
+                    </a>
+                  </li>
+                  <li>
+                    <a href="images/colorscheme/nekonako-om-mar.png" class="card-text" target="_blank" rel="noopener">
+                      Nekonako - Om Mar
+                    </a>
+                  </li>
+                  <li>
+                    <a href="images/colorscheme/onedark.png" class="card-text" target="_blank" rel="noopener">
+                      Onedark
+                    </a>
+                  </li>
+                  <li>
+                    <a href="images/colorscheme/owl4ce-dark.png" class="card-text" target="_blank" rel="noopener">
+                      Owl4ce - Dark
+                    </a>
+                  </li>
+                  <li>
+                    <a href="images/colorscheme/owl4ce-light.png" class="card-text" target="_blank" rel="noopener">
+                      Owl4ce - Light
+                    </a>
+                  </li>
+                  <li>
+                    <a href="images/colorscheme/siduck-onedark.png" class="card-text" target="_blank" rel="noopener">
+                      Siduck - One Dark
+                    </a>
+                  </li>
+                  <li>
+                    <a href="images/colorscheme/snazzy.png" class="card-text" target="_blank" rel="noopener">
+                      Snazzy
+                    </a>
+                  </li>
+                  <li>
+                    <a href="images/colorscheme/tomorrow-night.png" class="card-text" target="_blank" rel="noopener">
+                      Tomorrow - Night
+                    </a>
+                  </li>
+                  <li>
+                    <a href="images/colorscheme/tomorrow-night-eighties.png" class="card-text" target="_blank"
+                      rel="noopener">
+                      Tomorrow - Night - Eighties
+                    </a>
+                  </li>
+                  <li>
+                    <a href="images/colorscheme/xshin.png" class="card-text" target="_blank" rel="noopener">
+                      xShin - Dark
+                    </a>
                   </li>
                 </ul>
                 <div class="text-end">
-                  <a href="#" class="btn btn-dark-side">See More <i class="fas fa-sign-in-alt"></i></a>
+                  <a class="btn btn-dark-side comming-soon">See More <i class="fas fa-sign-in-alt"></i></a>
                 </div>
               </div>
             </div>
@@ -148,7 +264,74 @@
         <div class="card mb-3 bg-dark" style="max-width: 540px;">
           <div class="row g-0">
             <div class="col-md-4">
-              <img src="images/music.png" class="img-fluid rounded-start" alt="...">
+              <a href="images/colortoys/pipes2.png" target="_blank" rel="noopener">
+                <img src="images/colortoys/pipes2.png" class="img-fluid rounded-start" alt="Owl4ce - Dark">
+              </a>
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title"><i class="fas fa-gamepad me-2"></i> Colortoys</h5>
+                <ul style="list-style-type: disc;">
+                  <li>
+                    <a href="images/colortoys/bloks.png" class="card-text" target="_blank" rel="noopener">
+                      bloks
+                    </a>
+                  </li>
+                  <li>
+                    <a href="images/colortoys/colorbars.png" class="card-text" target="_blank" rel="noopener">
+                      colorbars
+                    </a>
+                  </li>
+                  <li>
+                    <a href="images/colortoys/colortest.png" class="card-text" target="_blank" rel="noopener">
+                      colortest
+                    </a>
+                  </li>
+                  <li>
+                    <a href="images/colortoys/colortest-slim.png" class="card-text" target="_blank" rel="noopener">
+                      colortest-slim
+                    </a>
+                  </li>
+                  <li>
+                    <a href="images/colortoys/colorview.png" class="card-text" target="_blank" rel="noopener">
+                      colorview
+                    </a>
+                  </li>
+                  <li>
+                    <a href="images/colortoys/panes.png" class="card-text" target="_blank" rel="noopener">
+                      panes
+                    </a>
+                  </li>
+                  <li>
+                    <a href="images/colortoys/pipes1.png" class="card-text" target="_blank" rel="noopener">
+                      pipes1
+                    </a>
+                  </li>
+                  <li>
+                    <a href="images/colortoys/pipes2.png" class="card-text" target="_blank" rel="noopener">
+                      pipes2
+                    </a>
+                  </li>
+                  <li>
+                    <a href="images/colortoys/pipes2-slim.png" class="card-text" target="_blank" rel="noopener">
+                      pipes2-slim
+                    </a>
+                  </li>
+                </ul>
+                <div class="text-end">
+                  <a class="btn btn-dark-side comming-soon">See More <i class="fas fa-sign-in-alt"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card mb-3 bg-dark" style="max-width: 540px;">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <a href="images/music/cava/cava1.png">
+                <img src="images/music/cava/cava1.png" class="img-fluid rounded-start" alt="Music - Ncmpcpp - Cava"
+                  target="_blank" rel="noopener">
+              </a>
             </div>
             <div class="col-md-8">
               <div class="card-body">
@@ -165,7 +348,7 @@
                   </li>
                 </ul>
                 <div class="text-end">
-                  <a href="#" class="btn btn-dark-side">See More <i class="fas fa-sign-in-alt"></i></a>
+                  <a class="btn btn-dark-side comming-soon">See More <i class="fas fa-sign-in-alt"></i></a>
                 </div>
               </div>
             </div>
@@ -174,7 +357,10 @@
         <div class="card mb-3  bg-dark" style="max-width: 540px;">
           <div class="row g-0">
             <div class="col-md-4">
-              <img src="images/neovim.jpg" class="img-fluid rounded-start" alt="...">
+              <a href="images/texteditor/neovim-coc.png">
+                <img src="images/texteditor/neovim-coc.png" class="img-fluid rounded-start" alt="Neovim - Coc"
+                  target="_blank" rel="noopener">
+              </a>
             </div>
             <div class="col-md-8">
               <div class="card-body">
@@ -188,36 +374,7 @@
                   </li>
                 </ul>
                 <div class="text-end">
-                  <a href="#" class="btn btn-dark-side">See More <i class="fas fa-sign-in-alt"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="card mb-3  bg-dark" style="max-width: 540px;">
-          <div class="row g-0">
-            <div class="col-md-4">
-              <img src="images/color.jpg" class="img-fluid rounded-start" alt="...">
-            </div>
-            <div class="col-md-8">
-              <div class="card-body">
-                <h5 class="card-title"><i class="fas fa-palette me-2"></i> Colorscheme</h5>
-                <ul style="list-style-type: disc;">
-                  <li>
-                    <p class="card-text">Ayu Onedark</p>
-                  </li>
-                  <li>
-                    <p class="card-text">Nekonako Djancoeg</p>
-                  </li>
-                  <li>
-                    <p class="card-text">Owl4ce Dark</p>
-                  </li>
-                  <li>
-                    <p class="card-text">Gruvbox Dark</p>
-                  </li>
-                </ul>
-                <div class="text-end">
-                  <a href="#" class="btn btn-dark-side">See More <i class="fas fa-sign-in-alt"></i></a>
+                  <a class="btn btn-dark-side comming-soon">See More <i class="fas fa-sign-in-alt"></i></a>
                 </div>
               </div>
             </div>
@@ -227,7 +384,7 @@
           <a href="../installation/android.html" class="text-muted mt-4"><i
               class="fas fa-arrow-alt-circle-left me-1"></i>
             Previous</a>
-          <a href="../preview/screenshot.html" class="text-dark mt-4 next round">Next <i
+          <a class="text-dark mt-4 next round comming-soon" style="cursor: pointer;">Next <i
               class="fas fa-arrow-alt-circle-right ms-1"></i>
           </a>
         </div>
@@ -245,6 +402,8 @@
     crossorigin="anonymous"></script>
   <script src="../assets/js/bootstrap/bootstrap.min.js"></script>
   <script src="../assets/js/highlight/highlight.min.js"></script>
+  <script src="../assets/js/sweetalert/sweetalert2.all.min.js"></script>
+  <script src="../assets/js/script.js"></script>
   <script>hljs.highlightAll();</script>
   <!-- Menu Toggle Script -->
   <script>
@@ -252,6 +411,17 @@
       e.preventDefault();
       $("#wrapper").toggleClass("toggled");
     });
+
+    const commingsoon = document.querySelectorAll(".comming-soon");
+    commingsoon.forEach(cms => {
+      cms.addEventListener("click", function () {
+        Swal.fire({
+          icon: 'error',
+          title: 'Opsss...',
+          html: 'Comming Soon',
+        })
+      })
+    })
   </script>
 </body>
 

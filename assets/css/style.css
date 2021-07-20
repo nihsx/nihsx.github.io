@@ -65,9 +65,18 @@ ul {
   background-color:#1A1C1E !important
 }
 
+.btn-light:hover {
+  background-color: rgb(221, 221, 221);
+}
+
 .btn-dark-side {
   color: #fff;
   background-color: #1A1C1E;
+}
+
+.btn-dark-side:hover {
+  color: #fff;
+  background-color: #121416;
 }
 
 .bg-dark-main {

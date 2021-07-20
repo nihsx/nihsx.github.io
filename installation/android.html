@@ -43,7 +43,7 @@
           <li><a href="../preview/screenshot.html"><i class="fas fa-camera me-1"></i> Screenshot</a></li>
         </ul>
       </div>
-      <div class="donate">
+      <div class="license comming-soon">
         <p class="text-muted ms-3 mt-4">License</p>
         <ul>
           <li><a href="#"><i class="fas fa-file-alt me-1"></i> GNU General Public License
@@ -53,11 +53,10 @@
       <div class="donate">
         <p class="text-muted ms-3 mt-4">Support Author</p>
         <ul>
-          <a href="#" style="color: #FC3367">
-            <li class="bg-white rounded text-center me-4">
-              Donate
+          <li class="ms-3 mt-4">
+            <a href="#" class="btn btn-light comming-soon" style="color: #FC3367">Donate
               <i class="fab fa-gratipay"></i>
-          </a>
+            </a>
           </li>
         </ul>
       </div>
@@ -67,11 +66,12 @@
     <div id="page-content-wrapper">
       <nav class="navbar navbar-expand-lg navbar-light bg-dark-side mt-4">
         <div class="container-fluid">
-          <button class="btn btn-dark" id="menu-toggle"><i class="fas fa-bars"></i></button>
-          <!-- <a href="https://github.com/xshin404/myTermux" class="btn btn-light me-3"><i
-              class="fab fa-github me-2"></i>See on GitHub</a> -->
+          <button class="btn btn-dark" id="menu-toggle"><i class="fas fa-bars me-2"></i>Menu</button>
+          <a href="https://github.com/xshin404/myTermux" class="btn btn-light me-3">
+            <i class="fab fa-github me-2"></i>See on GitHub
+          </a>
           <!-- GitHub corner -->
-          <a href="https://github.com/xshin404/myTermux" class="github-corner" tabindex="-1"><svg width="80" height="80"
+          <!-- <a href="https://github.com/xshin404/myTermux" class="github-corner" tabindex="-1"><svg width="80" height="80"
               viewBox="0 0 250 250"
               style=" position: absolute; bottom: 0; right: 0; border: 0; fill: #fff; color: #1A1C1E;">
               <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
@@ -114,7 +114,7 @@
                 animation: octocat-wave 560ms ease-in-out;
               }
             }
-          </style>
+          </style> -->
         </div>
       </nav>
       <div class="container-fluid bg-dark-side text-light p-4">
@@ -181,6 +181,7 @@
     crossorigin="anonymous"></script>
   <script src="../assets/js/bootstrap/bootstrap.min.js"></script>
   <script src="../assets/js/highlight/highlight.min.js"></script>
+  <script src="../assets/js/sweetalert/sweetalert2.all.min.js"></script>
   <script>hljs.highlightAll();</script>
   <!-- Menu Toggle Script -->
   <script>
@@ -188,6 +189,17 @@
       e.preventDefault();
       $("#wrapper").toggleClass("toggled");
     });
+
+    const commingsoon = document.querySelectorAll(".comming-soon");
+    commingsoon.forEach(cms => {
+      cms.addEventListener("click", function () {
+        Swal.fire({
+          icon: 'error',
+          title: 'Opsss...',
+          html: 'Comming Soon',
+        })
+      })
+    })
   </script>
 </body>
 
