@@ -14,7 +14,7 @@ function dom(data) {
   return `
   <ul>
     <li><i class="fas fa-star text-warning me-2"></i>${data.stargazers_count}</li>
-    <li><i class="fas fa-code-branch me-3"></i>${data.forks_count}</li>
+    <li><i class="fas fa-code-branch me-2"></i>${data.forks_count}</li>
   </ul>
   `
 }
