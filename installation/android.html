@@ -127,6 +127,8 @@
           </ul> -->
         </div>
         <p class="text-muted ms-3 mt-4"><i class="fab fa-android me-2"></i> Termux (Android)</p>
+        <h4 class="btn btn-success ms-2 mt-3 mb-4"><i class="fas fa-exclamation-triangle me-2"></i> Install with script
+          installer</h4>
         <ul style="list-style-type: disc;">
           <li>
             Update Repository & Upgrade Package
@@ -149,6 +151,52 @@
             <pre class="mt-3 rounded"><code>$ ./install.sh</code></pre>
           </li>
         </ul>
+
+        <h4 class="btn btn-success ms-2 mt-3 mb-4"><i class="fas fa-exclamation-triangle me-2"></i> Manual installation
+        </h4>
+        <ul style="list-style-type: disc;">
+          <li>
+            Update Repository & Upgrade Package
+            <pre class="mt-3 rounded"><code>$ pkg update && pkg upgrade</code></pre>
+          </li>
+          <li style="list-style-type: none;">
+            <h4 class="btn btn-success"><i class="fas fa-exclamation-triangle me-2 text-warning"></i> Optional</h4>
+          </li>
+          <li>
+            Install Dependency Package
+            <pre class="mt-3 rounded"><code>$ pkg install bc git bat cava curl \
+  clang exa git imagemagick inotify-tools \
+  lf mpd mpc ncmpcpp neovim neofetch \
+  openssh termux-api tmux zsh</code></pre>
+          </li>
+          <li>
+            Dotfiles
+            <pre class="mt-3 rounded"><code>$ cp -R .local .config .termux .color-toys \
+  .scripts .zshrc .tmux.conf .lfvar $HOME \
+  && termux-reload-settings</code></pre>
+          </li>
+          <li>
+            Oh-My-ZSH
+            <pre
+              class="mt-3 rounded"><code>$ git clone https://github.com/robbyrussell/oh-my-zsh $HOME/.oh-my-zsh/</code></pre>
+            zsh-syntax-highlighting
+            <pre
+              class="mt-3 rounded"><code>$ git clone https://github.com/zsh-users/zsh-syntax-highlighting $HOME/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting</code></pre>
+            zsh-autosuggestions
+            <pre
+              class="mt-3 rounded"><code>$ git clone https://github.com/zsh-users/zsh-autosuggestions $HOME/.oh-my-zsh/custom/plugins/zsh-autosuggestions</code></pre>
+          </li>
+          <li>
+            Tmux Theme Pack
+            <pre
+              class="mt-3 rounded"><code>$ git clone https://github.com/jimeh/tmux-themepack $HOME/.tmux-themepack</code></pre>
+          </li>
+          <li>
+            Neovim Setup (NvChad)
+            <pre class="mt-3 rounded"><code>$ git clone https://github.com/NvChad/NvChad $HOME/NvChad</code></pre>
+          </li>
+        </ul>
+
         <div class="text-end">
           <a href="../index.html" class="text-muted mt-4"><i class="fas fa-arrow-alt-circle-left me-1"></i> Previous</a>
           <a href="../login/login.html" class="text-dark mt-4 next round">Next <i
