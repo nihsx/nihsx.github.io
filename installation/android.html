@@ -12,7 +12,8 @@
     integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
   <link rel="stylesheet" href="../assets/css/fontawesome/all.min.css">
   <!-- <link rel="stylesheet" href="../assets/css/highlight/pojoaque.css"> -->
-  <link rel="stylesheet" href="../assets/css/highlight/gruvbox-dark.css">
+  <!-- <link rel="stylesheet" href="../assets/css/highlight/gruvbox-dark.css"> -->
+  <link rel="stylesheet" href="../assets/css/prism/tomorrow-night/prism.css">
   <!-- Custom styles for this template -->
   <link href="../assets/css/style.css" rel="stylesheet">
   <style>
@@ -68,12 +69,12 @@
       <nav class="navbar navbar-expand-lg navbar-light bg-dark-side mt-4">
         <div class="container-fluid">
           <button class="btn btn-dark" id="menu-toggle"><i class="fas fa-bars"></i></button>
-          <a href="https://github.com/xshin404/myTermux" class="btn btn-light me-3">
+          <!-- <a href="https://github.com/xshin404/myTermux" class="btn btn-light me-3" target="_blank">
             <i class="fab fa-github me-2"></i>See on GitHub
-          </a>
+          </a> -->
           <!-- GitHub corner -->
-          <!-- <a href="https://github.com/xshin404/myTermux" class="github-corner" tabindex="-1"><svg width="80" height="80"
-              viewBox="0 0 250 250"
+          <a href="https://github.com/xshin404/myTermux" class="github-corner" tabindex="-1" target="_blank"><svg
+              width="80" height="80" viewBox="0 0 250 250"
               style=" position: absolute; bottom: 0; right: 0; border: 0; fill: #fff; color: #1A1C1E;">
               <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
               <path
@@ -115,7 +116,7 @@
                 animation: octocat-wave 560ms ease-in-out;
               }
             }
-          </style> -->
+          </style>
         </div>
       </nav>
       <div class="container-fluid bg-dark-side text-light p-4">
@@ -132,23 +133,24 @@
         <ul style="list-style-type: disc;">
           <li>
             Update Repository & Upgrade Package
-            <pre class="mt-3 rounded"><code>$ pkg update && pkg upgrade</code></pre>
+            <pre class="mt-3 rounded"><code class="language-bash">pkg update && pkg upgrade</code></pre>
           </li>
           <li>
             Install Dependency Package
-            <pre class="mt-3 rounded"><code>$ pkg install bc git</code></pre>
+            <pre class="mt-3 rounded"><code class="language-bash">pkg install bc git</code></pre>
           </li>
           <li>
             Clone or Download Repository
-            <pre class="mt-3 rounded"><code>$ git clone https://github.com/xshin404/myTermux</code></pre>
+            <pre
+              class="mt-3 rounded"><code class="language-bash">git clone https://github.com/xshin404/myTermux</code></pre>
           </li>
           <li>
             Open Directory
-            <pre class="mt-3 rounded"><code>$ cd myTermux</code></pre>
+            <pre class="mt-3 rounded"><code class="language-bash">cd myTermux</code></pre>
           </li>
           <li>
             Execute installation script
-            <pre class="mt-3 rounded"><code>$ ./install.sh</code></pre>
+            <pre class="mt-3 rounded"><code class="language-bash">./install.sh</code></pre>
           </li>
         </ul>
 
@@ -157,43 +159,44 @@
         <ul style="list-style-type: disc;">
           <li>
             Update Repository & Upgrade Package
-            <pre class="mt-3 rounded"><code>$ pkg update && pkg upgrade</code></pre>
+            <pre class="mt-3 rounded"><code class="language-bash">pkg update && pkg upgrade</code></pre>
           </li>
           <li style="list-style-type: none;">
             <h4 class="btn btn-success"><i class="fas fa-exclamation-triangle me-2 text-warning"></i> Optional</h4>
           </li>
           <li>
             Install Dependency Package
-            <pre class="mt-3 rounded"><code>$ pkg install bc git bat cava curl \
-  clang exa git imagemagick inotify-tools \
-  lf mpd mpc ncmpcpp neovim neofetch \
-  openssh termux-api tmux zsh</code></pre>
+            <pre class="mt-3 rounded"><code class="language-bash">pkg install bc git bat cava curl \
+clang exa git imagemagick inotify-tools \
+lf mpd mpc ncmpcpp neovim neofetch \
+openssh termux-api tmux zsh</code></pre>
           </li>
           <li>
             Dotfiles
-            <pre class="mt-3 rounded"><code>$ cp -R .local .config .termux .color-toys \
-  .scripts .zshrc .tmux.conf .lfvar $HOME \
-  && termux-reload-settings</code></pre>
+            <pre class="mt-3 rounded"><code class="language-bash">cp -R .local .config .termux .color-toys \
+.scripts .zshrc .tmux.conf .lfvar $HOME \
+&& termux-reload-settings</code></pre>
           </li>
           <li>
             Oh-My-ZSH
             <pre
-              class="mt-3 rounded"><code>$ git clone https://github.com/robbyrussell/oh-my-zsh $HOME/.oh-my-zsh/</code></pre>
+              class="mt-3 rounded"><code class="language-bash">git clone https://github.com/robbyrussell/oh-my-zsh $HOME/.oh-my-zsh/</code></pre>
             zsh-syntax-highlighting
             <pre
-              class="mt-3 rounded"><code>$ git clone https://github.com/zsh-users/zsh-syntax-highlighting $HOME/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting</code></pre>
+              class="mt-3 rounded"><code class="language-bash">git clone https://github.com/zsh-users/zsh-syntax-highlighting $HOME/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting</code></pre>
             zsh-autosuggestions
             <pre
-              class="mt-3 rounded"><code>$ git clone https://github.com/zsh-users/zsh-autosuggestions $HOME/.oh-my-zsh/custom/plugins/zsh-autosuggestions</code></pre>
+              class="mt-3 rounded"><code class="language-bash">git clone https://github.com/zsh-users/zsh-autosuggestions $HOME/.oh-my-zsh/custom/plugins/zsh-autosuggestions</code></pre>
           </li>
           <li>
             Tmux Theme Pack
             <pre
-              class="mt-3 rounded"><code>$ git clone https://github.com/jimeh/tmux-themepack $HOME/.tmux-themepack</code></pre>
+              class="mt-3 rounded"><code class="language-bash">git clone https://github.com/jimeh/tmux-themepack $HOME/.tmux-themepack</code></pre>
           </li>
           <li>
             Neovim Setup (NvChad)
-            <pre class="mt-3 rounded"><code>$ git clone https://github.com/NvChad/NvChad $HOME/NvChad</code></pre>
+            <pre
+              class="mt-3 rounded"><code class="language-bash">git clone https://github.com/NvChad/NvChad $HOME/NvChad</code></pre>
           </li>
         </ul>
 
@@ -216,9 +219,10 @@
     integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
     crossorigin="anonymous"></script>
   <script src="../assets/js/bootstrap/bootstrap.min.js"></script>
-  <script src="../assets/js/highlight/highlight.min.js"></script>
   <script src="../assets/js/sweetalert/sweetalert2.all.min.js"></script>
-  <script>hljs.highlightAll();</script>
+  <script src="../assets/js/prism/okaidia-theme/prism.js"></script>
+  <!-- <script src="../assets/js/highlight/highlight.min.js"></script> -->
+  <!-- <script>hljs.highlightAll();</script> -->
   <!-- Menu Toggle Script -->
   <script>
     $("#menu-toggle").click(function (e) {
