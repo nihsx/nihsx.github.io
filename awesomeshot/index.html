@@ -151,16 +151,30 @@
         <h4 class="mt-4">Usage</h4>
         <pre class="rounded"><code class="language-bash line-numbers">
 Usage:
-  awesomeshot [options] [filename]
+  awesomeshot [option1] [option2] [option3] [filename]
+  
+Options1:
+  -d                  Default mode (Require Option2)
+  -a                  Automatic mode (Require Option2)
+  -af                 Automatic mode awesomeshot with footer text (Require Option2 & Option3)
+  -m                  Manual mode awesomeshot (Require Option2 & Filename)
+  -f                  Manual mode awesomeshot with footer text (Require Option2, Option3 & Filename)
 
-Options:
-  -a      Automatic run awesomeshot (automatic detect new file when you do screenshot)
-  -f      Manual run awesomeshot with footer text (require filename)
-  -af     Run awesomeshot with automatic with footer text
-  -h      Print this help message
-  -i      Print information about this program
-  -m      Manual run awesomeshot (require filename)
-  -v      Print version awesomeshot
+Option2:
+
+  --border-light      Border color Light Mode
+  --border-dark       Border color Dark Mode
+
+Option3:
+
+  --footer-light      Footer color Light Mode
+  --footer-dark       Footer color Dark Mode
+
+Other:
+
+  -h                  Print this help message
+  -i                  Print information about this program
+  -v                  Print version awesomeshot
         </code></pre>
 
         <h4 class="mt-4">Example</h4>
